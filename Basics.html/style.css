@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(226, 170, 96);
+}
+h1{
+    color: rgb(3, 41, 41);
+
+}
+.a:hover{
+    color: blue;
+
+}
+#eg1{
+    width: 400px;
+    height: 400px;
+    background-color: beige;
+    margin: auto;
+}
+
+button:hover{
+    background-color: blueviolet;
+    color: aquamarine;
+}
+
+nav a{
+    text-decoration: none;
+    
+}

@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    background: #f3f3f4;
+    color: #222;
+}
+
+/* Header */
+.header{ /* wrapper */
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #000;
+    color: #fff;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo{
+    font-size: 18px;
+    letter-spacing: 0.6px;
+}
+
+/* Page layout */
+.page{
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar{
+    width: 180px;
+    background: #eee;
+    height: calc(100vh - 64px);
+    position: fixed;
+    top: 64px;
+    left: 0;
+    padding: 20px 12px;
+}
+
+.sidebar ul{
+    list-style: none;
+}
+
+.sidebar li{
+    padding: 10px 8px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Main content area */
+.main{
+    margin-left: 200px; /* leave room for sidebar */
+    padding: 24px;
+    width: calc(100% - 200px);
+}
+
+/* Grid that holds hero + right column + cards */
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    grid-template-rows: auto auto;
+    gap: 16px;
+    align-items: start;
+}
+
+.hero{
+    background: linear-gradient(120deg,#222 0%, #444 100%);
+    min-height: 360px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.hero-inner h1{
+    font-size: 36px;
+    opacity: 0.95;
+}
+
+.right{
+    display: grid;
+    grid-template-rows: 1fr auto;
+    gap: 16px;
+}
+
+.promo{
+    background: linear-gradient(120deg,#555,#333);
+    min-height: 360px;
+    border-radius: 8px;
+}
+
+.small-tiles{
+    display: flex;
+    gap: 12px;
+}
+
+.tile{
+    background: #ddd;
+    flex: 1;
+    height: 140px;
+    border-radius: 6px;
+}
+
+/* Cards row that spans full width below */
+.cards{
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 12px;
+    margin-top: 6px;
+}
+
+.card{
+    background: #3a3a3a;
+    height: 100px;
+    border-radius: 6px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px){
+    .sidebar{display:none}
+    .main{margin-left:0; width:100%;}
+    .grid{grid-template-columns: 1fr;}
+    .right{grid-template-rows: auto ;}
+    .promo{min-height:180px}
+    .hero{min-height:220px}
+}

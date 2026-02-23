@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.grid-container {
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    /* grid-template-areas: "a b b c c"
+                         "a e f f d"
+                         "h e f f d"
+                         "h g i i d";           */
+    gap: 10px;
+    padding: 10px;
+    background-color:black;
+}
+.box{
+    height: 200px;
+    width: 200px;
+}
+
+
+#b1{
+    background-color: rgb(239, 74, 74);
+    
+}
+#b2{
+    background-color: lightblue;
+    
+}
+#b3{
+    background-color: lightgreen;
+    
+}
+#b4{
+    background-color: rgb(128, 31, 189);
+    
+}
+#b5{
+    background-color: rgb(190, 25, 25);
+    
+}
+#b6{
+    background-color: rgb(202, 202, 34);
+
+}
+
+#b7{
+    background-color: lightcoral;
+    
+    
+}
+#b8{
+    background-color: lightblue;
+
+}
+#b9{
+    background-color: lightgreen;
+    
+}
+
+
+
+
+
+

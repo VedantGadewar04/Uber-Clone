@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.grid-container {
+    width: 800px;
+    height: 800px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+#b1{
+    background-color: lightcoral;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+#b2{
+    background-color: lightblue;
+}
+#b3{
+    background-color: lightgreen;
+}
+#b4{
+    background-color: lightpink;
+}
+#b5{
+    background-color: lightgray;
+}
+#b6{
+    background-color: lightyellow;
+}

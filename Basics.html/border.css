@@ -1,0 +1,8 @@
+#eg1{
+   width: 200px;
+   height: 100px;
+   background-color: beige; 
+   border-width: 10px;
+   border-style:ridge;
+   border-color: red;
+}

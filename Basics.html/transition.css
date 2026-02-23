@@ -1,0 +1,26 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 200px;
+    height: 200px ;
+    background-color: aqua;
+    transition: width 5s ease,background-color 5s ease;
+       /* width .3s linear; */
+}
+
+.box:hover{
+    width:600px;
+    background-color: red;
+
+}

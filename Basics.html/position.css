@@ -1,0 +1,20 @@
+.big-box{
+    border:  1px solid black;
+    width: 100wv;
+    height: 200px;
+    gap: 20px;
+
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+}
+
+
+
+#box2{
+    position: relative;
+    
+}
